@@ -1,0 +1,61 @@
+<snippet>
+	<content><![CDATA[
+    
+    #include<bits/stdc++.h>
+using namespace std;
+#define int long long int
+#define ld long double
+#define vi vector<int>
+#define mod 1000000007
+#define pi pair<int,int>
+#define ff first
+#define ss second
+#define pb push_back
+#define mk make_pair
+#define all(x) x.begin(),x.end() 
+#define i32 int32_t
+#define endl "\n"
+#define v2dd vector<vector<int>>
+#define v2d(m,r,c) vector<vector<int>> m(r,(vector<int> (c)))
+const int MAX =150000;
+void pls()
+{
+  ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#ifndef ONLINE_JUDGE
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+#endif
+}
+i32 main(){pls();  
+
+ 
+        int t;cin>>t; while(t--)
+        {
+        	
+           
+            
+               
+                 
+                     
+
+
+
+        }
+
+
+
+
+
+        	
+
+         
+
+ return 0;}
+     
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>#</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

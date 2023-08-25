@@ -1,0 +1,13 @@
+{
+	"caret_extra_width": 0,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Se7en Color Schemes/Themes/Se7en Light.tmTheme",
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "Adaptive.sublime-theme",
+	"wide_caret": true,
+	"auto_complete": true,
+}

@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+#include<iostream>
+#include <algorithm>
+#include <bitset>
+#include <map>
+#include <queue>
+#include <set>
+#include <stack>
+#include <string>
+#include <vector>
+using namespace std;
+#define ll long long
+void pls()
+{
+  ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#ifndef ONLINE_JUDGE
+ freopen("input.txt", "r", stdin);
+  // freopen("output.txt", "w", stdout);
+#endif
+}
+int  main()
+{
+	   pls();
+
+
+	   
+	
+return 0;}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>topcoder</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
