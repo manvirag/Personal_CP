@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+    
+      bool isprime(ll n){   for(int i=2;i<=sqt(n);i++) if(n%i==0)return 0; return 1;}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>prime</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
