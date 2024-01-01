@@ -1,0 +1,55 @@
+void reorderList(Node* head) {
+      
+        if(!head)
+        return ;
+        else if(!head->next)
+        return ;
+        
+        Node* pre=head;
+        Node* cur=head->next;
+        
+        while(cur and cur->next)
+        {
+             pre=pre->next;
+             cur=cur->next->next;
+            //  if(!cur)break;
+        }
+        
+        Node* ll2=pre->next;
+        pre->next=NULL;
+        
+        Node* head2=NULL;
+        
+        pre=NULL;
+        cur=ll2;
+        Node* nex=NULL;
+        
+        while(cur)
+        {
+            nex=cur->next;
+            cur->next=pre;
+            pre=cur;
+            cur=nex;
+            
+        }
+        
+        head2=pre;
+        
+        pre=head;
+        cur=head2;
+        
+        while(pre and cur)
+        {
+            Node* temp=cur->next;
+            cur->next=pre->next;
+            pre->next=cur;
+            pre=cur->next;
+            cur=temp;
+        }
+        return;
+        
+        
+        
+        
+    
+}

@@ -1,0 +1,63 @@
+// Program to find maximum sum subarray 
+// in a given 2D array 
+#include<bits/stdc++.h> 
+using namespace std; 
+
+#define ROW 4 
+#define COL 5 
+int kadane(int a[],int i,int j)
+{
+    int sum=INT_MIN;
+    int cs=0;
+    
+    for(int k=i;k<=j;k++)
+    {
+        cs+=a[k];
+        sum=max(sum,cs);
+        if(cs<0)cs=0;
+    }
+    return sum;
+}
+
+// Driver program to test above functions 
+int main() 
+{ 
+	int mat[ROW][COL] = {{1, 2, -1, -4, -20}, 
+					{-8, -3, 4, 2, 1}, 
+					{3, 8, 10, 1, 3}, 
+					{-4, -1, 1, 7, -6} 
+					}; 
+
+
+           int n,m; n=ROW,m=COL;
+           
+           //int mat[n][m];
+           
+           for(int i=0;i<n;i++)
+           {
+               for(int j=0;j<m;j++)
+               cin>>mat[i][j];
+           }
+           int a[m]={0};
+           int res=INT_MIN;
+           for(int bot=0;bot<n;bot++)
+           {
+               
+               for(int i=0;i<m;i++) a[i]=0;
+               for(int top=bot;top>=0;top--)
+               {
+                      for(int i=0;i<m;i++)
+                      a[i]+=mat[top][i];
+                      
+                      for(int i=0;i<m;i++)
+                        cout<<a[i]<<" ";
+                 cout<<endl;
+                      res=max(res, kadane(a,0,m-1));
+                      
+               }
+           }
+           cout<<res<<endl;
+      
+
+	return 0; 
+} 

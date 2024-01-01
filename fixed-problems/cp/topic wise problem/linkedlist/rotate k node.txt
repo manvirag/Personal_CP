@@ -1,0 +1,34 @@
+ if(!head)
+     return head;
+     if(!head->next)
+     return head;
+      node* attach=new node(-1);
+      node* start=head;
+      head=attach;
+      
+      while(start->next)
+      {
+            node* pre=NULL;
+            node* cur=start;
+            node* nex=NULL;
+            
+            int len=k;
+            
+            while(len and cur)
+            {
+                nex=cur->next;
+                cur->next=pre;
+                pre=cur;
+                cur=nex;
+                len--;
+                
+            }
+            
+            attach->next=pre;
+            start->next=cur;
+            attach=start;
+            start=cur;
+            if(!start) break;
+            
+      }
+      return head->next;

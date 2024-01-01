@@ -1,0 +1,9 @@
+those thing which have property like
+we have to find something in range l,r
+and it has property like if we are able to find the something in range
+
+ start to r and start to l
+
+ then l,r===(start to r)-(start to left)
+
+ like examples xor, sum etc

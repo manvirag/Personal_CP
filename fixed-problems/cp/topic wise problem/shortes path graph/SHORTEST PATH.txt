@@ -1,0 +1,6 @@
+1..  if graph is unweight(directive or un, may cycle pos weight) --> bfs whether it is matrix or the graph n 
+or bfs can be use if weight is same by making like unweghted
+2..  if graph contain weight but it is 0 or 1 ---> use bfs 0-1  n
+3..  if graph contain different weight and weight is positive may cycle ---> use dijstra nlogn( one source--all des)
+3..  if graph contain different weight and weight may be negative and may negative cycle-->use bellmond n^2( one source -- all des) same use as dijstra
+4..  if graph  contain different weigth and negative and cycle also find negative need all pair shortest path--floyd warshall n^3

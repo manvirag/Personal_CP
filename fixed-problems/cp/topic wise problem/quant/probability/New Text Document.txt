@@ -1,0 +1,4 @@
+open class 12th cbse read from gfg a/c to book topic 
+
+1...learn basic combination
+2....defination--> conditional

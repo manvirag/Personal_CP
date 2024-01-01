@@ -1,0 +1,57 @@
+void searchh(queue<Node*> &st,Node* root,int n){
+    
+    if(!root)
+    return ;
+    
+    if(n==root->data)
+    {
+         st.push(root);
+         return ;
+    }
+    else if(n<root->data){
+    st.push(root);
+    searchh(st,root->left,n);}
+    else {
+    st.push(root);
+    searchh(st,root->right,n);}
+    
+    
+}
+Node* pre;
+void answer(Node* root,queue<Node*> &st,int n)
+{
+      if(!root)
+      return ;
+      
+      if(n==root->data)
+      {
+           if(!st.empty() and  root==st.front())
+           pre=st.front(),st.pop();
+           
+           return ;
+      }
+      else if(n<root->data){
+             if(!st.empty() and root==st.front())
+           pre=st.front(),st.pop();
+    
+        answer(root->left,st,n);}
+    else {
+           if(!st.empty() and root==st.front())
+           pre=st.front(),st.pop();
+     
+        answer(root->right,st,n);}
+    
+}
+Node* LCA(Node *root, int n1, int n2)
+{
+    queue<Node*> st;
+    pre=NULL;
+    searchh(st,root,n1);
+    
+    answer(root,st,n2);
+    // if(!pre)
+    // return ;
+    // else
+    return pre;
+    
+}

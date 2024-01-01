@@ -1,0 +1,132 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+#define MAXN 500002
+#define MAXROOTN 708
+ 
+#define make_four(a,b,c,d) make_pair(make_pair((a),(b)), make_pair((c),(d)))
+#define QB(x) x.first.first
+#define QR(x) x.first.second
+#define QL(x) x.second.first
+#define QI(x) x.second.second
+ 
+typedef pair<int,int> ipair;
+typedef pair<ipair,ipair> ifour;
+ 
+int N,M, ROOTN, A[MAXN], H[MAXN], LEFT[MAXN], ANS[MAXN];
+int HCOUNT[MAXN];
+ 
+vector<ifour> QUERIES;
+int FLAGS, PENDING;
+int LMIN, RMAX;
+ 
+int RSIGN[2] = {1, -1};
+ 
+ 
+#ifndef ONLINE_JUDGE
+  #define ONLINE_JUDGE
+#endif
+ 
+#ifdef ONLINE_JUDGE
+  #define DEBUG1(format) {}
+  #define DEBUG(format, ...) {} //Intentionally blank
+#else
+  #define DEBUG1(format) fprintf(stderr, format )
+  #define DEBUG(format, ...) fprintf(stderr, format, __VA_ARGS__)
+#endif
+ 
+void add(int x){
+  if (HCOUNT[x]==0){
+    PENDING++;
+  }else if(HCOUNT[x] == H[x]){
+    PENDING++;
+    FLAGS++;
+  }
+  ++HCOUNT[x];
+ 
+  if(HCOUNT[x]==H[x]){
+    PENDING--;
+  }
+}
+ 
+void remove(int x){
+  if (HCOUNT[x]==H[x]){
+    PENDING++;
+  }
+  --HCOUNT[x];
+ 
+   if(HCOUNT[x]==0){
+    PENDING--;
+  }else if(HCOUNT[x]==H[x]){
+    PENDING--;
+    FLAGS--;
+  }
+}
+ 
+int main(){
+  ios_base::sync_with_stdio(false);
+ 
+  cin >> N >> M;
+ 
+  for(int i=0;i<N;i++){ cin >> A[i];}
+  for(int i=1;i<=M;i++){ cin >> H[i];}
+  int Q;
+  cin >> Q;
+  ROOTN = sqrt(N)+1;
+  for(int i=0;i<Q;i++){ 
+    int a, b;
+    cin >> a >> b;
+    a--; b--;
+    int block = a/ROOTN;
+    QUERIES.push_back(make_four(block, RSIGN[block&1] * b, a, i));
+  }
+ 
+  sort(QUERIES.begin(), QUERIES.end());
+ 
+  LMIN = 0;
+  int L=0,R=-1;
+  for(ifour q4: QUERIES){
+ 
+    int qi = QI(q4), l = QL(q4), r = QR(q4);
+    if(r < 0){ r*=-1; }
+    
+    // DEBUG("\t%d: %d, (%d, %d) -> (%d, %d)\n",QB(q4), qi, L,R, l, r);
+    
+    while(R > r){
+      remove(A[R]); 
+    //   DEBUG("\t--(%d,%d): removeR[%d]=%d; PENDING=%d\n",L,R, R, A[R], PENDING);
+      --R;
+    }
+ 
+    while (L < l){
+      remove(A[L]);
+    //   DEBUG("\t--(%d,%d): removeL[%d]=%d; PENDING=%d\n",L,R,L, A[L], PENDING);
+      ++L;
+    }
+        
+    // These are directions that don't make sense to do if we've got flags on.
+    while(R < r && FLAGS==0 ){
+      ++R;
+      add(A[R]); 
+    //   DEBUG("\t--(%d,%d): AddR[%d]=%d; PENDING=%d\n",L,R, R, A[R], PENDING);
+      
+    }
+ 
+    while (L > l  && FLAGS==0){
+      --L;
+      add(A[L]);
+    //   DEBUG("\t--(%d,%d): addL[%d]=%d; PENDING=%d\n",L,R,L, A[L], PENDING);
+      
+    }
+ 
+    ANS[qi] = (PENDING==0 && FLAGS==0)?1:0;
+    // DEBUG("\t-Ans[%d]=%d\n", qi, ANS[qi]);
+  }
+ 
+  for(int i=0;i<Q;i++){
+    cout << ANS[i] << '\n';
+  }
+ 
+  return 0;
+ 
+}
