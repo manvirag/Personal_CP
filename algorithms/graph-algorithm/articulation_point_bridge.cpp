@@ -1,4 +1,4 @@
-// find the articulation point and bridge O(m+n)
+// find the articulation point and bridge O(m+n) -> removal of which increase the count of connected components
 //  input  
 /*9 10
 0 1
