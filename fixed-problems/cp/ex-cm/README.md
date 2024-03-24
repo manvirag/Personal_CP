@@ -1,5 +1,7 @@
 ### Topic RoadMap: Candidate Master
 
+- This repo will have the problems that helped to reach the CM from expert, might have duplicated from topic wise repo.
+
 #### Array:
 1. Two Pointer
 2. Binary Search

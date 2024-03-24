@@ -1,0 +1,1 @@
+#### Placeholder for the general algorithms or data structures which can be used at any place.
