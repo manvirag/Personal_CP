@@ -5,3 +5,4 @@
 - where they meet that the starting point.
 - Intuition: Not sure.
 - https://cp-algorithms.com/others/tortoise_and_hare.html
+- https://drive.google.com/file/d/1AUZpYvtZgtVVGw5SvxlPVfh_hehIiIEf/view

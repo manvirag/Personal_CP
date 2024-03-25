@@ -132,3 +132,8 @@
 
 #### Game Theory:
 1. Nim and Grundy's number.
+
+
+#### For topics:
+
+https://cp-algorithms.com/num_methods/ternary_search.html
