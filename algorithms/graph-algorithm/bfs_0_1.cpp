@@ -8,7 +8,14 @@
     if two option after relation 0+0 or 0+x ---> in pq we push 0+x--> x still two element in pq
     or suppose pq--> x,x,x
     x+0,x+x--> pq--> x,x,2x still two element and back at weight of x
-               
+
+
+    https://cp-algorithms.com/graph/01_bfs.html
+
+    In one liner,
+    at any point of time in the priority queue which is deque here
+    there will be only 2 distinct value.
+
 */
 
 vector<int> d(n, INF);
