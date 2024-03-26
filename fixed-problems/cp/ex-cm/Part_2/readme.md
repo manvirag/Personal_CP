@@ -9,7 +9,8 @@
    5. intuition: if we normally do , to find connected component of zero edges will be n^2 , because each vertex we are checking for all n vertices. What there is any sence in even consider in looping the visited vertex. So maintain a set of all vertice, and only loop on the remaining vectex and which also not have weight 1. 
 4. LCA: (Binary lifting)✅
 5. SCC: (Kosaraju's algorithm) ✅ 
-6. DFS tree:
+6. DFS tree: 
+   1. 
 7. Re-rooting technique:
 8. Articulation Bridges and Bridge Tree:
 9. Strong orientation:
