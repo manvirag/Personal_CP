@@ -80,7 +80,7 @@ void printSolution(int dist[][V])
 int main() 
 { pls();
 	int graph[V][V] = { {0, 5, INF, 10}, 
-						{INF, 0, 3, INF}, 
+ 						{INF, 0, 3, INF},
 						{INF, INF, 0, 1}, 
 						{INF, INF, INF, 0} 
 					}; 

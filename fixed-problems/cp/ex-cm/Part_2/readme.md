@@ -47,11 +47,10 @@
     5. Why dijkstra doesn't work for -ve weight ? ( as already mentioned above it does work depending upon implementation. Note it might stuck in loop if we have negative weight cycle)
     6. This is also kind of intuitive, since we are checking relaxation on each, but with condition so it will only visit the vertex first which are near to source, then those are near to first iterations.
     7. Now for some vertex to have minimum distance ( keep dijsktra intuition in mind ), it will require atmost no. of iterations equal to edges in shortest path. In dijkstra we check the shorted path, but there all so it will eventually be updated by minimum one.
-16. Floyd Warshall: ✅
+16. Floyd Warshall: ✅⌛
     1. All pair shortest path.
     2. Not works when there is negative weight cycle.
-    3. Intuition: 
-    4. 
+    3. Intuition: don't know now
 17. Euler tour:
 18. SPFA:
 19. Cycle detection:
