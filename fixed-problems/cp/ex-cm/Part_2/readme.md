@@ -51,14 +51,17 @@
     1. All pair shortest path.
     2. Not works when there is negative weight cycle.
     3. Intuition: don't know now
-17. Euler tour: ✅
+17. Euler tour: ✅⌛
     1. Euler tour tree (ETT) is a method for representing a rooted undirected tree as a number sequence, It can be done in different ways [for e.g](https://codeforces.com/blog/entry/63020).
-    2. This try is use to solve some problems on range queries on tree, subtree, lca etc.
+    2. This try is use to solve some problems on range queries on tree, subtree sum, path sum from root, lca etc.
     3. https://codeforces.com/blog/entry/18369 [tutorial + usecase]. ( there is one problem in algo section related to lca+euler)
     4. ![alt_text](euler.jpeg)
-18. SPFA: 
-19. Cycle detection:
-    1. Directed/Undirected
+18. SPFA (Shortest Path Faster Algorithm):✅
+    1. https://cp-algorithms.com/graph/bellman_ford.html#shortest-path-faster-algorithm-spfa
+    2. Kind of optimisation of bellmon, but its worst is still n*m. This run infinite if any negative weight cycle, so will have to stop algo once get this.
+19. Cycle detection: ✅ 
+    1. Directed(three colour)/Undirected(visited array only). 
+    2. Both mention in this [link]((https://cp-algorithms.com/graph/finding-cycle.html)).
 20. 2 SAT:
 21. Maximum Clique:
 22. Maximum independent set:
