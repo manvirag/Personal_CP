@@ -16,8 +16,14 @@
    4. now bridge defined as =>  A span-edge uv is a bridge if and only if there exists no back-edge that connects a descendant of uv with an ancestor of uv . In other words, a span-edge uv is a bridge if and only if there is no back-edge that "passes over" uv and a back-edge is never a bridge.
    5. although after knowing dfs tree , then bridge find with low and idx will also looks intuititve.
 7. Articulation Bridges and Bridge Tree: ✅  Tarjan's bridge finding algorithms.
-8. Re-rooting technique: 
-   1. 
+8. Re-rooting technique: ✅⌛
+   1. https://codeforces.com/blog/entry/76150
+   2. this is trick use to solve the dp on tree problems.
+   3. intro: 
+``
+      Our DP changes if we change the root of the tree, otherwise it won't make any sense to use this trick). Let's say we want to find dp[v] for every vertex in a tree, we must be able to update dp[v] using the children of vertex v . ****Then the trick allows you to move the root from a vertex to one of its adjacent vertices in O(1)****.
+`` 
+   4. It kind of use to problem for e.g. find maxmium diameter from each vertex. So we find the dp[root] by running dfs, then with the help of this we find the dp for all the other vertices. This is also called in-out dp. [Problem](https://codeforces.com/contest/1187/problem/E). More can be find over here. [Link](https://codeforces.com/blog/entry/20935)  
 9. Strong orientation:
 10. Articulation points
 11. Topological
