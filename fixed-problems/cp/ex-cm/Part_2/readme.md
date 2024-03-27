@@ -24,31 +24,34 @@
       Our DP changes if we change the root of the tree, otherwise it won't make any sense to use this trick). Let's say we want to find dp[v] for every vertex in a tree, we must be able to update dp[v] using the children of vertex v . ****Then the trick allows you to move the root from a vertex to one of its adjacent vertices in O(1)****.
 `` 
    4. It kind of use to problem for e.g. find maxmium diameter from each vertex. So we find the dp[root] by running dfs, then with the help of this we find the dp for all the other vertices. This is also called in-out dp. [Problem](https://codeforces.com/contest/1187/problem/E). More can be find over here. [Link](https://codeforces.com/blog/entry/20935)  
-9. Strong orientation:
-10. Articulation points
-11. Topological
-12. Prim’s MST
-13. Kruskal’s MST
-14. Dijkstra's Algorithm
-15. Bellman Ford
-16. Floyd Warshall
-17. Euler tour
-18. SPFA
-19. Cycle detection
+9. Strong orientation: ✅
+   1. A strong orientation of an undirected graph is an assignment of a direction to each edge that makes it a strongly connected graph. That is, after the orientation we should be able to visit any vertex from any vertex by following the directed edges.
+   2. this kind of we already solved in dfs tree blog: If graph have bridge not possible, else make span-edges in downward and back-edge in upward. It must be SCC.
+   3. https://cp-algorithms.com/graph/strong-orientation.html#toc-tgt-3 ( ⌛ see one extension, find orientation so that SCC minimum )
+10. Articulation points: ✅
+11. Topological: ✅
+12. Prim’s MST: ✅
+13. Kruskal’s MST: ✅
+14. Dijkstra's Algorithm: ✅
+15. Bellman Ford:
+16. Floyd Warshall:
+17. Euler tour:
+18. SPFA:
+19. Cycle detection:
     1. Directed/Undirected
-20. 2 SAT
-21. Maximum Clique
-22. Maximum independent set
-23. Eulerian path
-    1. Directed graph
-    2. Undirected
-24. Chromatic number
-25. Counting labeled graphs
-26. Number of Ways to Make a Graph Connected
-27. Prufer Code
-28. Tree Isomorphism
-29. Dinics Algorithm (Max flow)
-30. Hopcroft Karp Algorithm
-31. Kuhns Algorithm
-32. Hungarian Algorithm
-33. Chinese Postman Problem
+20. 2 SAT:
+21. Maximum Clique:
+22. Maximum independent set:
+23. Eulerian path:
+    1. Directed graph:
+    2. Undirected:
+24. Chromatic number:
+25. Counting labeled graphs:
+26. Number of Ways to Make a Graph Connected:
+27. Prufer Code:
+28. Tree Isomorphism:
+29. Dinics Algorithm (Max flow):
+30. Hopcroft Karp Algorithm:
+31. Kuhns Algorithm:
+32. Hungarian Algorithm:
+33. Chinese Postman Problem:
