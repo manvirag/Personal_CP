@@ -62,19 +62,19 @@
 19. Cycle detection: ✅ 
     1. Directed(three colour)/Undirected(visited array only). 
     2. Both mention in this [link]((https://cp-algorithms.com/graph/finding-cycle.html)).
-20. 2 SAT:
-21. Maximum Clique:
-22. Maximum independent set:
-23. Eulerian path:
+20. 2 SAT: ❌
+21. Maximum Clique: ❌
+22. Maximum independent set: ❌
+23. Eulerian path:❌
     1. Directed graph:
     2. Undirected:
-24. Chromatic number:
-25. Counting labeled graphs:
-26. Number of Ways to Make a Graph Connected:
-27. Prufer Code:
-28. Tree Isomorphism:
-29. Dinics Algorithm (Max flow):
-30. Hopcroft Karp Algorithm:
-31. Kuhns Algorithm:
-32. Hungarian Algorithm:
-33. Chinese Postman Problem:
+24. Chromatic number:❌
+25. Counting labeled graphs:❌
+26. Number of Ways to Make a Graph Connected:❌
+27. Prufer Code:❌
+28. Tree Isomorphism:❌
+29. Dinics Algorithm (Max flow):❌
+30. Hopcroft Karp Algorithm:❌
+31. Kuhns Algorithm:❌
+32. Hungarian Algorithm:❌
+33. Chinese Postman Problem:❌
