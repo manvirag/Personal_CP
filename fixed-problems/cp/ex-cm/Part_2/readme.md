@@ -35,17 +35,23 @@
 14. Dijkstra's Algorithm ( nlogn ):✅ ( can be used for directed or undirected ) 
     1. Limitations:
     2. One source shortest path.
-    3. There shouldn't be negative edge in graph.
+    3. There shouldn't be negative edge in graph. ( though this can be used with negative edge, but while iteration we will have to consider all the vertex even they are visited while relaxing, check algorithm dijkstra imple. )
     4. Intuition: Assume we have lots of ants on source and will go in all direction. Assume that each weight tells how fast the ant will cross this bridge and also it stop only on destination, now once we allow them to move. the ant which will go to the vertex having shortest weight. ( proof: check cp-algorithm)  
-15. Bellman Ford ( n^2 ):
+    ![alt_text](dijkstra.gif)
+    5. This is kind of easy once we assume that edge should not be negative, since increase edge will either equal to increase the distance. [Video explanation](https://www.youtube.com/watch?v=MD_KigIdnD8&t=301s&ab_channel=Learner%27sParadise)
+15. Bellman Ford ( n^2 ): ✅
     1. Single source shortest path with negative weight edges.
     2. Not works when there is negative weight cycle. ( a cycle whose edges are such that the sum of their weights is a negative value )
     3. ![img.png](img.png)
     4. Intuition: 
-16. Floyd Warshall:
+    5. Why dijkstra doesn't work for -ve weight ? ( as already mentioned above it does work depending upon implementation. Note it might stuck in loop if we have negative weight cycle)
+    6. This is also kind of intuitive, since we are checking relaxation on each, but with condition so it will only visit the vertex first which are near to source, then those are near to first iterations.
+    7. Now for some vertex to have minimum distance ( keep dijsktra intuition in mind ), it will require atmost no. of iterations equal to edges in shortest path. In dijkstra we check the shorted path, but there all so it will eventually be updated by minimum one.
+16. Floyd Warshall: ✅
     1. All pair shortest path.
     2. Not works when there is negative weight cycle.
-    3. Intuition:
+    3. Intuition: 
+    4. 
 17. Euler tour:
 18. SPFA:
 19. Cycle detection:
