@@ -32,9 +32,20 @@
 11. Topological: ✅
 12. Prim’s MST: ✅
 13. Kruskal’s MST: ✅
-14. Dijkstra's Algorithm: ✅
-15. Bellman Ford:
+14. Dijkstra's Algorithm ( nlogn ):✅ ( can be used for directed or undirected ) 
+    1. Limitations:
+    2. One source shortest path.
+    3. There shouldn't be negative edge in graph.
+    4. Intuition: Assume we have lots of ants on source and will go in all direction. Assume that each weight tells how fast the ant will cross this bridge and also it stop only on destination, now once we allow them to move. the ant which will go to the vertex having shortest weight. ( proof: check cp-algorithm)  
+15. Bellman Ford ( n^2 ):
+    1. Single source shortest path with negative weight edges.
+    2. Not works when there is negative weight cycle. ( a cycle whose edges are such that the sum of their weights is a negative value )
+    3. ![img.png](img.png)
+    4. Intuition: 
 16. Floyd Warshall:
+    1. All pair shortest path.
+    2. Not works when there is negative weight cycle.
+    3. Intuition:
 17. Euler tour:
 18. SPFA:
 19. Cycle detection:
