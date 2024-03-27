@@ -9,15 +9,20 @@
    5. intuition: if we normally do , to find connected component of zero edges will be n^2 , because each vertex we are checking for all n vertices. What there is any sence in even consider in looping the visited vertex. So maintain a set of all vertice, and only loop on the remaining vectex and which also not have weight 1. 
 4. LCA: (Binary lifting)✅
 5. SCC: (Kosaraju's algorithm) ✅ 
-6. DFS tree: 
+6. DFS tree: ✅⌛
+   1. this is kind of concept or idea or intuition behind the algorithms like bridge finding or some other etc. Since bridge finding algo is kind of unintuitive using two array.
+   2. while doing dfs on graph, we visit some edge while some not since the vertex of that edge already visited while visiting neighbouring vertex. 
+   3. https://codeforces.com/blog/entry/68138 ( also mentioned some of the other problems which can be solved having this concept inside of it. )
+   4. now bridge defined as =>  A span-edge uv is a bridge if and only if there exists no back-edge that connects a descendant of uv with an ancestor of uv . In other words, a span-edge uv is a bridge if and only if there is no back-edge that "passes over" uv and a back-edge is never a bridge.
+   5. although after knowing dfs tree , then bridge find with low and idx will also looks intuititve.
+7. Articulation Bridges and Bridge Tree: ✅  Tarjan's bridge finding algorithms.
+8. Re-rooting technique: 
    1. 
-7. Re-rooting technique:
-8. Articulation Bridges and Bridge Tree:
 9. Strong orientation:
 10. Articulation points
 11. Topological
 12. Prim’s MST
-13. Krushkhal’s MST
+13. Kruskal’s MST
 14. Dijkstra's Algorithm
 15. Bellman Ford
 16. Floyd Warshall
