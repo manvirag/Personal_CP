@@ -92,6 +92,7 @@
 
 #### Greedy:
 1. Its general not kind of topic. Comes with practice or past problems
+2. Break into subproblems , think whether its already solved or not.
 
 #### Constructive:
 1. Try with a small number and construct it.
