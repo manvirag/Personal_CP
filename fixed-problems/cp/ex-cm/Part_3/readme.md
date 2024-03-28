@@ -36,7 +36,14 @@ https://codeforces.com/blog/entry/67679
     4. sos vs bitmask => sos is a case of bitmask dp which used to calculate the sum of values over all subsets of a set efficiently.
     5. There are lots of optimisation and variation in this for some specific problems mentioned in blog like below two (x2+1, open and close) etc.
     6. For this scope just check TSP solution.
-11. x2 +1 trick:
-12. Open and close interval trick:
-13. DP on graph:
-14. DP on tree:
+    7. Problem or solve all while practising: https://codeforces.com/contest/453/problem/B
+11. x2 +1 trick: ❌⌛
+12. Open and close interval trick:❌⌛
+    1. Later on, looks not need for CM.
+13. DP on graph: ✅
+    1. Don't know very extensively.
+    2. But yes we have problems on find path in DAG using dp. [for e.g.](https://www.geeksforgeeks.org/longest-path-in-a-directed-acyclic-graph-dynamic-programming/)
+14. DP on tree: ✅
+    1. https://codeforces.com/blog/entry/20935
+    2. https://codeforces.com/blog/entry/79857
+    3. In-out dp or re-routing, etc techniquest more in above blogs.
