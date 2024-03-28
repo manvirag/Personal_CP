@@ -97,7 +97,7 @@
 1. Try with a small number and construct it.
 
 #### Data Structure:
-1. Linkedlist, stack, queue, heap, BST
+1. Linkedlist, stack, queue, heap, BST, BT etc.
 2. Segment tree
     1. + lazy
     2. Persistent Segment Tree
@@ -115,7 +115,7 @@
    2. DSU on the tree.
 9. SQRT Decomposition
 10. Centroid Decomposition
-11. Binarizing a Tree
+11. Linearizing a Tree
 12. Ordered set policy-based DS.
 13. Venice Technique
 14. Persistent Array
