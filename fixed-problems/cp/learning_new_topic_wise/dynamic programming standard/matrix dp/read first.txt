@@ -1,0 +1,8 @@
+remember if direction is proper then only dp
+
+direction  right and down ---dp
+           i+1,j  i+1,j-1  i+1,j+2----dp
+           .
+           .
+          but in four,eight direction cannot be think ?
+  
