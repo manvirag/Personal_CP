@@ -14,9 +14,12 @@
    3. precompute the result of those boxes.
    4. Online query: 
    5. Get -> loop on first and last box and middles once result can get in constant time instead of sqrt(n).
-   6. Update -> [Not sure about range], but if we are updating the particular index that is fine.
+   6. Update -> if we are updating the particular index that is fine.
    7. Advance blog: https://codeforces.com/blog/entry/83248
 4. Mo’s [cp-algorithm](https://cp-algorithms.com/data_structures/sqrt_decomposition.html): ✅ 
    1. check in algo-> advanced-ds-algo
-   2.  
+   2. https://codeforces.com/blog/entry/81716
+   3. this is just reduce time complexity by sqrt(n), by just rearranging the query. This is obviously for offline queries.
+   4. check in advanced-ds-algo.
+   5. How it has sqrt time complexity: For queries having same left block, right in worst will go O(n) combine for all queries of this block. Total block is sqrt(n) -> n*sqrt(n);   
 5. Euler tour → these algo :✅
