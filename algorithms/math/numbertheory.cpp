@@ -83,7 +83,7 @@ int egcd(int a,int b)
 
     return egcd(b,a%b);
 }
-// mod should be priem
+// mod should be prime
 int inv[mod];
 void mmiar()
 {
