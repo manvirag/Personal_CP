@@ -8,7 +8,11 @@
    4. Now, our problem is reduced down to find the number of connected components with the length of 0. Naive DFS or BFS takes O(V + E) time, where V = n and E = n(n-1)/2. It can be shown then, that our current code would be in O(N^2). However, we can make the observation that whenever we visit an element, we don't need to check this element anymore in any of our future traversals. Therefore, we can try to erase this node in every visit. We can simply manage do this with a set.
    5. intuition: if we normally do , to find connected component of zero edges will be n^2 , because each vertex we are checking for all n vertices. What there is any sence in even consider in looping the visited vertex. So maintain a set of all vertice, and only loop on the remaining vectex and which also not have weight 1. 
 4. LCA: (Binary lifting)✅
+   1. https://codeforces.com/blog/entry/100826 , [Tutorial 2](https://codeforces.com/blog/entry/74847)
+   2. [P1](https://codeforces.com/contest/1516/problem/D) , [P2](https://codeforces.com/contest/1142/problem/B)
 5. SCC: (Kosaraju's algorithm) ✅ 
+   1. https://codeforces.com/blog/entry/105426
+   2. [P1](https://codeforces.com/contest/22/problem/E)
 6. DFS tree: ✅⌛
    1. this is kind of concept or idea or intuition behind the algorithms like bridge finding or some other etc. Since bridge finding algo is kind of unintuitive using two array.
    2. while doing dfs on graph, we visit some edge while some not since the vertex of that edge already visited while visiting neighbouring vertex. 
