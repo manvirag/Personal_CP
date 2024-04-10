@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+vector<int> g[MAX];
+vector<int> visi(MAX),low(MAX),ids(MAX);
+vector<pi> bridge;
+set<int>ap;
+void dfs(int i,int p){
+  visi[i]=1;
+  ++id;
+  low[i]=id;
+  ids[i]=id;
+  
+  for(auto x: g[i]){
+  
+   if(p==x)
+    continue;
+
+    if(!visi[x])
+     {  dfs(x,i);
+        low[i]=min(low[i],low[x]);
+       if(low[x]>ids[i])            
+       {     
+           ap.insert(i);
+           ap.insert(x);
+          bridge.pb({i,x});
+        }
+    }
+    else
+      low[i]=min(low[i],ids[x]);   
+   }
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tarjan</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

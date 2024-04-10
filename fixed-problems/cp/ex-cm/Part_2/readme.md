@@ -10,6 +10,7 @@
 4. LCA: (Binary lifting)✅
    1. https://codeforces.com/blog/entry/100826 , [Tutorial 2](https://codeforces.com/blog/entry/74847)
    2. [P1](https://codeforces.com/contest/1516/problem/D) , [P2](https://codeforces.com/contest/1142/problem/B)
+   3. More: can be implemented with sight less time complexity or in linear space.
 5. SCC: (Kosaraju's algorithm) ✅ 
    1. https://codeforces.com/blog/entry/105426
    2. [P1](https://codeforces.com/contest/22/problem/E)
@@ -19,6 +20,7 @@
    3. https://codeforces.com/blog/entry/68138 ( also mentioned some of the other problems which can be solved having this concept inside of it. )
    4. now bridge defined as =>  A span-edge uv is a bridge if and only if there exists no back-edge that connects a descendant of uv with an ancestor of uv . In other words, a span-edge uv is a bridge if and only if there is no back-edge that "passes over" uv and a back-edge is never a bridge.
    5. although after knowing dfs tree , then bridge find with low and idx will also looks intuititve.
+   6. [p1](https://codeforces.com/contest/412/problem/D), [p2](https://codeforces.com/contest/231/problem/E), [p3](https://codeforces.com/problemset/problem/1000/E) ,[p4](https://codeforces.com/contest/1364/problem/D)
 7. Articulation Bridges and Bridge Tree: ✅  Tarjan's bridge finding algorithms.
 8. Re-rooting technique: ✅⌛
    1. https://codeforces.com/blog/entry/76150
