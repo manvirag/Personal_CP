@@ -17,7 +17,7 @@
 6. DFS tree: ✅⌛
    1. this is kind of concept or idea or intuition behind the algorithms like bridge finding or some other etc. Since bridge finding algo is kind of unintuitive using two array.
    2. while doing dfs on graph, we visit some edge while some not since the vertex of that edge already visited while visiting neighbouring vertex. 
-   3. https://codeforces.com/blog/entry/68138 ( also mentioned some of the other problems which can be solved having this concept inside of it. )
+   3. https://codeforces.com/blog/entry/68138 ( also mentioned some of the other problems which can be solved having this concept inside of it. ), [Blog 2](https://codeforces.com/blog/entry/99259) <- how to find bridge tree.  
    4. now bridge defined as =>  A span-edge uv is a bridge if and only if there exists no back-edge that connects a descendant of uv with an ancestor of uv . In other words, a span-edge uv is a bridge if and only if there is no back-edge that "passes over" uv and a back-edge is never a bridge.
    5. although after knowing dfs tree , then bridge find with low and idx will also looks intuititve.
    6. [p1](https://codeforces.com/contest/412/problem/D), [p2](https://codeforces.com/contest/231/problem/E), [p3](https://codeforces.com/problemset/problem/1000/E) ,[p4](https://codeforces.com/contest/1364/problem/D)
