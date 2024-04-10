@@ -29,7 +29,8 @@
 ``
       Our DP changes if we change the root of the tree, otherwise it won't make any sense to use this trick). Let's say we want to find dp[v] for every vertex in a tree, we must be able to update dp[v] using the children of vertex v . ****Then the trick allows you to move the root from a vertex to one of its adjacent vertices in O(1)****.
 `` 
-   4. It kind of use to problem for e.g. find maxmium diameter from each vertex. So we find the dp[root] by running dfs, then with the help of this we find the dp for all the other vertices. This is also called in-out dp. [Problem](https://codeforces.com/contest/1187/problem/E). More can be find over here. [Link](https://codeforces.com/blog/entry/20935)  
+   4. It kind of use to problem for e.g. find maxmium diameter from each vertex. So we find the dp[root] by running dfs, then with the help of this we find the dp for all the other vertices. This is also called in-out dp. [Problem](https://codeforces.com/contest/1187/problem/E). More can be find over here. [Link](https://codeforces.com/blog/entry/20935)
+   5. Problems: [p1](https://codeforces.com/problemset/problem/543/D), [p2](https://codeforces.com/problemset/problem/734/E), [p3](https://codeforces.com/contest/1092/problem/F), [p4](https://codeforces.com/contest/815/problem/C),[p5](https://codeforces.com/contest/461/problem/B),[p6](https://codeforces.com/contest/1187/problem/E)
 9. Strong orientation: ✅
    1. A strong orientation of an undirected graph is an assignment of a direction to each edge that makes it a strongly connected graph. That is, after the orientation we should be able to visit any vertex from any vertex by following the directed edges.
    2. this kind of we already solved in dfs tree blog: If graph have bridge not possible, else make span-edges in downward and back-edge in upward. It must be SCC.
