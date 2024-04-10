@@ -1,9 +1,10 @@
 <snippet>
 	<content><![CDATA[
-vector<int> g[MAX];
-vector<int> visi(MAX),low(MAX),ids(MAX);
-vector<pi> bridge;
+vector<int> g[N];
+vector<int> visi(N),low(N),ids(N);
+vector<pair<int,int>> bridge;
 set<int>ap;
+ll id;
 void dfs(int i,int p){
   visi[i]=1;
   ++id;
