@@ -52,3 +52,9 @@
 16. Number of Solutions to a Basic Linear Algebraic Equation: ❌
     1. [cf blog](https://codeforces.com/blog/entry/54111)
 17. Intersection of Arithmetic Progressions: ❌
+18. 
+
+
+
+#### Logics / Trick
+1. LCM of array is or can be visualize as the product of maximum exponent of prime factors of each numbers.  [ 2*3, 2^2 * 3^2, 2^3*3^5] => lcm = 2^3 * 3^5
