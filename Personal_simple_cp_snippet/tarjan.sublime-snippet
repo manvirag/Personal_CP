@@ -31,6 +31,39 @@ void dfs(int i,int p){
    }
 
 }
+void dfs2(int i ,int par){
+
+   col[i] = colour;
+   visi[i] = true;
+   for(auto x: g[i]){
+        if(x==par) continue;
+        if(visi[x]) continue;
+        if(bridge.find({i,x}) == bridge.end() && bridge.find({x,i})==bridge.end()){
+          dfs2(x,i);
+        }
+   }
+}
+/*
+
+ for(int i=0;i<n;i++){
+          if(!visi[i]) {
+            dfs2(i,-1);
+            colour++;
+          }
+            
+        }
+
+vector<int> btree[colour];
+for(int i=0;i<n;i++){
+  for(auto x: g[i]){
+    if(col[i]!=col[x]){
+      btree[col[i]].push_back(col[x]);
+    }
+  }
+}
+
+
+*/
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>tarjan</tabTrigger>
