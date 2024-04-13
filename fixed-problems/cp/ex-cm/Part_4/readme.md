@@ -40,6 +40,8 @@
     2. This only exist iff , gcd(a,m)=1.
     3. Mostly this used when m is prime. 
     4. a^(m-2) = a^-1 % m. Means we need to find modulus of 1/a , then we can find power(a,m-2) with modules.
+    5. 0 is invertible , so take care of this. Means a!=0.  Some time this occur while doing module inverse one by one. like 1/(1/(1/x))%mod. There might possible that child resultant into zero. [Sample](https://codeforces.com/contest/543/problem/D)
+      
 13. Linear Congruence Equation: ❌
 14. Linear Diophantine Equation with Two Variables:✅ [cp-algorithm](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
     1. a.x+b.y=c  , form of equation. , where a,b and c are given integers. But x and y are unknown.
