@@ -63,6 +63,7 @@
     2. This try is use to solve some problems on range queries on tree, subtree sum, path sum from root, lca etc.
     3. https://codeforces.com/blog/entry/18369 [tutorial + usecase]. ( there is one problem in algo section related to lca+euler)
     4. ![alt_text](euler.jpeg)
+    5. [p1](https://www.geeksforgeeks.org/euler-tour-subtree-sum-using-segment-tree/), [p2](https://www.codechef.com/problems/ECJAN20F), [p3](https://codeforces.com/problemset/problem/620/E)) , [p4](https://www.codechef.com/problems/TREEUGH?tab=statement)
 18. SPFA (Shortest Path Faster Algorithm):✅
     1. https://cp-algorithms.com/graph/bellman_ford.html#shortest-path-faster-algorithm-spfa
     2. Kind of optimisation of bellmon, but its worst is still n*m. This run infinite if any negative weight cycle, so will have to stop algo once get this.
