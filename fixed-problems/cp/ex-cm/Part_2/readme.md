@@ -61,6 +61,7 @@
     3. Intuition: don't know now
     4. In other words, before k-th phase the value of d[i][j]  is equal to the length of the shortest path from vertex i to the vertex j , if the path is allowed to enter only the vertex with numbers smaller than  k.
     5. why it works ? Don't know intuition , neither POC, just take care of 4th line.
+    6. [p1](https://codeforces.com/problemset/problem/21/D), [p2](https://codeforces.com/contest/25/problem/C), [p3](https://codeforces.com/contest/295/problem/B), [p4](https://codeforces.com/contest/33/problem/B).
 17. Euler tour: ✅⌛
     1. Euler tour tree (ETT) is a method for representing a rooted undirected tree as a number sequence, It can be done in different ways [for e.g](https://codeforces.com/blog/entry/63020).
     2. This try is use to solve some problems on range queries on tree, subtree sum, path sum from root, lca etc.
