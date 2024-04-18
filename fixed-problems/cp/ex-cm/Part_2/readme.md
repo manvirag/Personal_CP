@@ -46,6 +46,7 @@
     4. Intuition: Assume we have lots of ants on source and will go in all direction. Assume that each weight tells how fast the ant will cross this bridge and also it stop only on destination, now once we allow them to move. the ant which will go to the vertex having shortest weight. ( proof: check cp-algorithm)  
     ![alt_text](dijkstra.gif)
     5. This is kind of easy once we assume that edge should not be negative, since increase edge will either equal to increase the distance. [Video explanation](https://www.youtube.com/watch?v=MD_KigIdnD8&t=301s&ab_channel=Learner%27sParadise)
+    6. 
 15. Bellman Ford ( n^2 ): ✅
     1. Single source shortest path with negative weight edges.
     2. Not works when there is negative weight cycle. ( a cycle whose edges are such that the sum of their weights is a negative value )
@@ -55,9 +56,11 @@
     6. This is also kind of intuitive, since we are checking relaxation on each, but with condition so it will only visit the vertex first which are near to source, then those are near to first iterations.
     7. Now for some vertex to have minimum distance ( keep dijsktra intuition in mind ), it will require atmost no. of iterations equal to edges in shortest path. In dijkstra we check the shorted path, but there all so it will eventually be updated by minimum one.
 16. Floyd Warshall: ✅⌛
-    1. All pair shortest path.
+    1. All pair shortest path. [link](https://cp-algorithms.com/graph/all-pair-shortest-path-floyd-warshall.html)
     2. Not works when there is negative weight cycle.
     3. Intuition: don't know now
+    4. In other words, before k-th phase the value of d[i][j]  is equal to the length of the shortest path from vertex i to the vertex j , if the path is allowed to enter only the vertex with numbers smaller than  k.
+    5. why it works ? Don't know intuition , neither POC, just take care of 4th line.
 17. Euler tour: ✅⌛
     1. Euler tour tree (ETT) is a method for representing a rooted undirected tree as a number sequence, It can be done in different ways [for e.g](https://codeforces.com/blog/entry/63020).
     2. This try is use to solve some problems on range queries on tree, subtree sum, path sum from root, lca etc.
