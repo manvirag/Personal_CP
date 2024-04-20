@@ -46,7 +46,7 @@
     4. Intuition: Assume we have lots of ants on source and will go in all direction. Assume that each weight tells how fast the ant will cross this bridge and also it stop only on destination, now once we allow them to move. the ant which will go to the vertex having shortest weight. ( proof: check cp-algorithm)  
     ![alt_text](dijkstra.gif)
     5. This is kind of easy once we assume that edge should not be negative, since increase edge will either equal to increase the distance. [Video explanation](https://www.youtube.com/watch?v=MD_KigIdnD8&t=301s&ab_channel=Learner%27sParadise)
-    6. 
+    6. [p1](https://codeforces.com/contest/229/problem/B), [p2](https://codeforces.com/contest/1473/problem/E) , [p3](https://codeforces.com/contest/59/problem/E) , [p4](https://www.hackerrank.com/challenges/synchronous-shopping/problem) , [p5](https://codeforces.com/contest/567/problem/E ), [p6](https://www.hackerearth.com/challenges/competitive/september-clash-15/algorithm/dangerous-dungeon/description/), [p7](https://codeforces.com/problemset/gymProblem/100589/K), [p8](https://codeforces.com/contest/786/problem/B), [p9](https://codeforces.com/contest/715/problem/B), [p10](https://codeforces.com/contest/449/problem/B), [p11](https://codeforces.com/contest/59/problem/E)
 15. Bellman Ford ( n^2 ): ✅
     1. Single source shortest path with negative weight edges.
     2. Not works when there is negative weight cycle. ( a cycle whose edges are such that the sum of their weights is a negative value )
