@@ -12,6 +12,7 @@
    1. https://cp-algorithms.com/data_structures/sparse-table.html
 6. BIT:✅ 
     1. Lower bound on BIT
+    2. [Intuition](https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a): 
 7. MOs Algorithm:✅
 8. DSU: [playlist for all ](https://www.youtube.com/playlist?list=PLqf9emQRQrnIQ3DkkyBNGe1s4l3HqMqrz)✅ ( Union and find in constant time. )
     1. Weighted Union find DSU: 
