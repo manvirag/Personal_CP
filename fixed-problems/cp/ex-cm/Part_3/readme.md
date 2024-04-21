@@ -28,6 +28,7 @@ https://codeforces.com/blog/entry/67679
    3. check in directory,  
 8. DP over divisor: ❌⌛ (***has to update the note pic***)
    1. TBU ( was something related to divisor )
+   2. ![alt_text](./dp_over_divisor.jpeg)
 9. Subset Sum in SQRT. ❌
 10. Bitmask DP: ✅
     1. https://codeforces.com/blog/entry/47764
