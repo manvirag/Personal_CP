@@ -60,3 +60,6 @@
 
 #### Logics / Trick
 1. LCM of array is or can be visualize as the product of maximum exponent of prime factors of each numbers.  [ 2*3, 2^2 * 3^2, 2^3*3^5] => lcm = 2^3 * 3^5
+2. We can find prime factorisation in log(N). with one previous computation of nloglogn
+3. We can find the count pf all divisor for n in n^1/3.
+4. The maxium no. of divisor is 1344 for integers up to 10^9 and 103 680 for integers up to 10^18. So its denote in context we can assume its as n^1/3 asymptotically, as divisort and solve problem. like [P](https://codeforces.com/contest/1955/problem/G). [blog](https://codeforces.com/blog/entry/14463), [https://ideone.com/JNRMsQ]
