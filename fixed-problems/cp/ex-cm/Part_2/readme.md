@@ -90,3 +90,6 @@
 31. Kuhns Algorithm:❌
 32. Hungarian Algorithm:❌
 33. Chinese Postman Problem:❌
+34. Bipartite: Graph divided into two set, No edge with same colour [Tutorial](https://cp-algorithms.com/graph/bipartite-check.html)
+    1. ![image](https://github.com/manvirag982/Personal_CP/assets/54881553/3560ec4c-d381-4943-8825-4548dc09c5f9)
+  
