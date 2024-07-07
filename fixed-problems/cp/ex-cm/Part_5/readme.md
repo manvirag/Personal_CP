@@ -1,20 +1,22 @@
 #### Data Structure:
-1. Linked-list, stack, queue, heap, BST, BT etc. :✅ 
-2. Segment tree:✅
+1. Linked-list, stack, queue, heap, BST, BT etc. :✅
+2. Trie:
+   1. https://leetcode.com/problems/construct-string-with-minimum-cost/description/
+3. Segment tree:✅
     1. + lazy:✅
     2. Persistent Segment Tree: ❌
     3. Dynamic Segment Tree: ❌
     4. Iterative Segment Tree: ❌
     5. Segment Tree ft Arithmetic Progressions: ❌
-3. Merge sort tree: ❌
-4. Wavelet tree: ❌
-5. Sparse table:❌
+4. Merge sort tree: ❌
+5. Wavelet tree: ❌
+6. Sparse table:❌
    1. https://cp-algorithms.com/data_structures/sparse-table.html
-6. BIT:✅ 
+7. BIT:✅ 
     1. Lower bound on BIT
     2. [Intuition](https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a): 
-7. MOs Algorithm:✅
-8. DSU: [playlist for all ](https://www.youtube.com/playlist?list=PLqf9emQRQrnIQ3DkkyBNGe1s4l3HqMqrz)✅ ( Union and find in constant time. )
+8. MOs Algorithm:✅
+9. DSU: [playlist for all ](https://www.youtube.com/playlist?list=PLqf9emQRQrnIQ3DkkyBNGe1s4l3HqMqrz)✅ ( Union and find in constant time. )
     1. Weighted Union find DSU: 
        1. [Problem](https://www.spoj.com/problems/CHAIN/)
        2. Its kind of do the dsu operations , but there is weight on edge and also depend on direction of edge.
@@ -32,12 +34,12 @@
        2. ![img_2.png](img_2.png)
        3. [Tutorial 1](https://codeforces.com/blog/entry/67696) , [Tutorial 2](https://codeforces.com/blog/entry/44351), [Tutorial 3, vivek](https://codeforces.com/blog/entry/103064)
        4. check in advanced-ds-algo (it's same as above ss)   
-9. SQRT Decomposition: ✅
-10. Centroid Decomposition: ❌
-11. Binarizing a Tree:❌
-12. Ordered set policy-based DS:✅ (snippet)
+10. SQRT Decomposition: ✅
+11. Centroid Decomposition: ❌
+12. Binarizing a Tree:❌
+13. Ordered set policy-based DS:✅ (snippet)
     1. set , but can get the order of number and number by its order
-13. Venice Technique: ✅
+14. Venice Technique: ✅
     1. https://codeforces.com/blog/entry/58316 . Since operation , which is tough is updateAll, for this we can maintain the water level variable. Blog have good analogy like having buildings we have to remove x floors from all building, then just increase the water level they will all vanish.
     2. ```js
        struct VeniceSet { 
