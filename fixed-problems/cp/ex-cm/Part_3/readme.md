@@ -47,7 +47,8 @@ https://codeforces.com/blog/entry/67679
 14. DP on tree: ✅
     1. https://codeforces.com/blog/entry/20935
     2. https://codeforces.com/blog/entry/79857
-    3. In-out dp or re-routing, etc techniquest more in above blogs.
+    3. https://codeforces.com/contest/1988/problem/D
+    4. In-out dp or re-routing, etc techniquest more in above blogs.
    
 15. Dp with c++ bitset ( require only flag in dp):
     1. https://leetcode.com/problems/maximum-total-reward-using-operations-ii/description/
