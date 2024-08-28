@@ -6,3 +6,13 @@
 - Intuition: Not sure.
 - https://cp-algorithms.com/others/tortoise_and_hare.html
 - https://drive.google.com/file/d/1AUZpYvtZgtVVGw5SvxlPVfh_hehIiIEf/view
+
+
+
+x + y -> first meet
+
+2*(x+y) = zc + y + x
+2x+2y = zc + y+ x
+x+y = zc 
+x = zc-y
+
