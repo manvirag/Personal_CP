@@ -11,8 +11,10 @@
 
 x + y -> first meet
 
-2*(x+y) = zc + y + x
-2x+2y = zc + y+ x
-x+y = zc 
-x = zc-y
+2*(x+y) = zc + y + x <br>
+2x+2y = zc + y+ x  <br>
+x+y = zc  <br>
+x = zc-y <br>
+
+that' why 
 
