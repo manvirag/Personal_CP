@@ -24,6 +24,8 @@
    1. Euclid only talk about the gcd of two number, but this finds a way to represent GCD in terms of a and b, i.e. coefficients x and y for which:  a.x + b.y = gcd(a,b); [numbertheory.cpp]
    2. Linear-diophantine is more general form of this concept
    3. According benzout's identity , always possible to get. :❌ 
+<img width="716" alt="image" src="https://github.com/user-attachments/assets/187ae711-3f29-42be-8d8a-46e1f5aeb8fe" />
+
 7. Combinatorics basics:❌✅ [cp-algorithm](https://cp-algorithms.com/combinatorics/binomial-coefficients.html)
    1. ![alt_text](combi.jpeg)
    2. TBU , as per frequency of problems.
@@ -48,6 +50,8 @@
     1. a.x+b.y=c  , form of equation. , where a,b and c are given integers. But x and y are unknown.
     2. There are different problems based on this ,like one solution, many solution, in interval . All mention in cp-algorithm. Check as per requirements.
     3. Note: it has solution , iff c is multiple of gcd(a,b);
+<img width="776" alt="image" src="https://github.com/user-attachments/assets/3caa2c4d-0e4d-43e2-b7b1-6c86acc22301" />
+
 15. Linear Sieve for Multiplicative Functions:✅
     1. [for detailed blog](https://codeforces.com/blog/entry/54090)
     2. check snippet.
