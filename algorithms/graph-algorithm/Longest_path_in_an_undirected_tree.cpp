@@ -97,3 +97,8 @@ int main()
 
 
 https://stackoverflow.com/questions/20010472/proof-of-correctness-algorithm-for-diameter-of-a-tree-in-graph-theory
+
+imagine this as a straight line and random first point is first end. 
+Now tree will look like a straight brach with side branch. 
+Now from that index we will find the fartest x. 
+If we don't choose that
