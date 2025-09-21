@@ -94,3 +94,6 @@ int main()
 	g.longestPathLength(); 
 	return 0; 
 } 
+
+
+https://stackoverflow.com/questions/20010472/proof-of-correctness-algorithm-for-diameter-of-a-tree-in-graph-theory
