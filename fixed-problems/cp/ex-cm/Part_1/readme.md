@@ -10,6 +10,8 @@ https://codeforces.com/blog/entry/60702
 
 Two Pointer implementation Algo:
 
+https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/
+
 ```
 
   while(second<s.size())
